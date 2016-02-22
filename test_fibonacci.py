@@ -12,5 +12,6 @@ class FibTest(ut.TestCase):
 		assert fb.Fibonacci(5) == 5
 
 	def test_Fib_throws_exeption(self):
+		import fibonacci as fb
 		self.assertRaises(ValueError, fb.Fibonacci, -5)
 		self.assertRaises(ValueError, fb.Fibonacci, 5.5)
